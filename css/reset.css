@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+html,body,head,title,h1,h2,h3,h4,h6,p,div,blockquote,address,ul,ol,li,dl,
+dt,dd,table,tr,th,td,caption,thead,tbody,tfoot,form,legend,fieldset,header,
+nav,aside,figure,section,article,main,footer {margin: 0; padding: 0;}
+header,nav,aside,section,article,main,footer,figure,main {display: block;}
+
+a{text-decoration: none; color: inherit;}
+li {list-style: none;}
+table {border-collapse: collapse;}/* 보더간의 간격 조절 */
+
+i,address,cite {font-style: normal;}
+/* 기울임체 속성을 해제 */
+img, fieldset, input, select, textarea, button {border: none;}
+button {cursor: pointer;}
+
+caption, .blind {font-size: 0;line-height: 0; height: 0; overflow: hidden;
+text-indent: -9999px;}/* indent 문장에서 첫줄만 들여쓰기 */
+
+img, fieldset, input, select, textarea, button {border: none;}
+label, img, input, select, textarea, button, a {vertical-align: middle;}/* 세로정렬 */
+button {cursor: pointer;}
+.clear:before, .clear:after {/* clear(클래스명) */
+    content: '';    
+    display: block;
+    clear: both; /* float이 없는 상태로 만들어 놓는 코드 */
+}
